@@ -14,7 +14,7 @@ fs.mounts = [
   { path = "{{ arch_libdir }}", uri = "file:{{ arch_libdir }}" },
 ]
 
-sgx.debug = {{ 'true' if log_level == 'debug' else 'false' }}
+sgx.debug = true
 sgx.edmm_enable = {{ 'true' if env.get('EDMM', '0') == '1' else 'false' }}
 
 # Enable remote attestation

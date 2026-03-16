@@ -19,7 +19,7 @@ all: gramine-sealing-key-provider.manifest.sgx gramine-sealing-key-provider.sig
 endif
 
 ifeq ($(DEBUG),1)
-GRAMINE_LOG_LEVEL = debug
+GRAMINE_LOG_LEVEL = trace
 RUST_LOG = debug
 else
 GRAMINE_LOG_LEVEL = error
